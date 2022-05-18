@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>17188c18-979f-4b51-ada5-6b6916c222c2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PlayListLib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Check.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)M3u.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CueSheet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DlpEpisode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\M3uEpisode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dlp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Track.cs" />
+  </ItemGroup>
+</Project>
