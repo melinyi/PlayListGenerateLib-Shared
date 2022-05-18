@@ -7,6 +7,14 @@ namespace PlayListLib.Model
 {
     public class DlpEpisode
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="title"></param>
+        /// <param name="isPlayed"></param>
+        /// <param name="duration">Unit:millisencond</param>
+        /// <param name="start">Unit:millisencond</param>
         public DlpEpisode(string url, string title = default, bool isPlayed = false, long duration = 0, long start = 0)
         {
             Url = url.Trim();
